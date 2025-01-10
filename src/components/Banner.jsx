@@ -8,7 +8,7 @@ const Banner = () => {
       {/* Text Content */}
       <Container className="flex flex-col lg:flex-row items-center justify-evenly px-6 py-12 space-y-8 lg:space-y-0">
         <div className="max-w-lg space-y-6 sm:max-w-md text-center lg:text-left">
-          <h1 className="text-3xl sm:text-4xl font-bold text-sky-600">
+          <h1 className="text-3xl sm:text-4xl font-bold text-black">
             Up to <span className="text-red-700">75% </span> Off
           </h1>
           <p className="text-gray-600 sm:text-base text-sm">
