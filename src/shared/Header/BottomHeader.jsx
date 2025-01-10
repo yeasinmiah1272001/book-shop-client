@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const BottomHeader = () => {
   return (
-    <div>
-      <ul className="flex items-center justify-center gap-8 mr-36 cursor-pointer">
+    <div className=" border-b border-black p-2">
+      <ul className="flex items-center justify-center gap-8 mt-2 mr-36 cursor-pointer ">
         {navigation.map((item, index) => (
           <NavLink
             to={item.path}

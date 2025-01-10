@@ -8,7 +8,7 @@ import { FaShoppingCart, FaHeart, FaUser } from "react-icons/fa";
 const TopHeader = () => {
   return (
     <div>
-      <div className="flex justify-center items-center py-4">
+      <div className="flex justify-center items-center py-1 border-b border-black">
         {/* Logo Section */}
         <div>
           <img src={logo} alt="Logo" className="h-[90px]" />
