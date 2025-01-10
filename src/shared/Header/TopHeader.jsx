@@ -4,7 +4,6 @@ import logo from "../../assets/logo.png";
 
 // Import Font Awesome icons
 import { FaShoppingCart, FaHeart, FaUser } from "react-icons/fa";
-import { navigation } from "../../constant";
 
 const TopHeader = () => {
   return (
@@ -12,7 +11,7 @@ const TopHeader = () => {
       <div className="flex justify-center items-center py-4">
         {/* Logo Section */}
         <div>
-          <img src={logo} alt="Logo" className="h-[90px] w-auto" />
+          <img src={logo} alt="Logo" className="h-[90px]" />
         </div>
 
         {/* Search Bar with Icon */}

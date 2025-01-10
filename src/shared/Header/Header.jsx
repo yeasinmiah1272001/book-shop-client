@@ -5,10 +5,10 @@ import Container from "../../components/Container";
 
 const Header = () => {
   return (
-    <Container className={""}>
+    <div>
       <TopHeader />
       <BottomHeader />
-    </Container>
+    </div>
   );
 };
 
