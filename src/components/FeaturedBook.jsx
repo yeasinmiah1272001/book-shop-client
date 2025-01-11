@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 const FeaturedBook = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -71,7 +72,6 @@ const FeaturedBook = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
         },
       },
     ],
@@ -83,15 +83,15 @@ const FeaturedBook = () => {
         <div className="flex justify-end gap-6 items-center">
           <button
             onClick={previous}
-            className="bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 transition duration-300"
+            className="bg-[#01B4FF] text-white p-2 rounded-full shadow-md transition duration-300"
           >
-            <FaArrowCircleLeft size={30} />
+            <IoIosArrowDropleft size={32} />
           </button>
           <button
             onClick={next}
-            className="bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 transition duration-300"
+            className="bg-[#01B4FF] text-white p-2 rounded-full shadow-md  transition duration-300"
           >
-            <FaArrowCircleRight size={30} />
+            <IoIosArrowDropright size={32} />
           </button>
         </div>
       </div>
