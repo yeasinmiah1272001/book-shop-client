@@ -64,7 +64,7 @@ const TopCategoryBook = () => {
   };
   return (
     <Container className="slider-container relative py-8">
-      <SectionTitle title={"All Programming Books"} className=" mb-6" />
+      <SectionTitle title={"All Category Books"} className=" mb-6" />
       <div className="absolute mt-28 left-0 z-10 flex justify-between items-center w-full transform -translate-y-1/2">
         <button
           onClick={previous}
