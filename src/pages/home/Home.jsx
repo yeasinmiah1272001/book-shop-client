@@ -4,6 +4,9 @@ import Features from "../../components/Features";
 import FeaturedBook from "../../components/FeaturedBook";
 import TopCategoryBook from "../../components/TopCategoryBook";
 import ProgrammingBook from "../../components/ProgrammingBook";
+import TestimonialsCarousel from "../../components/TestimonialsCarousel";
+import BookCarousel from "../../components/BookCarousel";
+import Newsletter from "../../components/Newsletter";
 
 const Home = () => {
   return (
@@ -13,6 +16,9 @@ const Home = () => {
       <FeaturedBook />
       <TopCategoryBook />
       <ProgrammingBook />
+      <TestimonialsCarousel />
+      <BookCarousel />
+      <Newsletter />
     </div>
   );
 };

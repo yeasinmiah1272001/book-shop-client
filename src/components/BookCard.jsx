@@ -2,6 +2,7 @@ import React from "react";
 import { FaCableCar, FaGift, FaHeart, FaTruck } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
 import { TbHeartPlus } from "react-icons/tb";
+import AddToCartBtn from "./AddToCartBtn";
 
 const BookCard = ({ item }) => {
   return (
@@ -35,12 +36,7 @@ const BookCard = ({ item }) => {
         </div>
         <hr />
         <div className="p-4 flex items-center gap-3">
-          <button className="py-2 flex items-center text-center gap-2 mx-auto px-10 w-full bg-[#01B4FF] text-white font-medium rounded-full transition-colors duration-300">
-            Add To Cart{" "}
-            <span>
-              <GoArrowUpRight />
-            </span>
-          </button>
+          <AddToCartBtn item={item} />
           <button className="p-3 border border-[#01B4FF] rounded-full hover:bg-gray-100 transition-colors duration-300">
             <TbHeartPlus size={20} className="text-[#01B4FF]" />
           </button>

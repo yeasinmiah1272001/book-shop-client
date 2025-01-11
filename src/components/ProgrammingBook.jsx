@@ -7,7 +7,7 @@ const ProgrammingBook = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  console.log("data", data);
+  // console.log("data", data);
 
   useEffect(() => {
     const fetchData = () => {

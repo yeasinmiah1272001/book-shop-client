@@ -5,7 +5,7 @@ import Container from "../../components/Container";
 
 const Header = () => {
   return (
-    <div>
+    <div className="sticky top-0 bg-white z-50">
       <TopHeader />
       <BottomHeader />
     </div>

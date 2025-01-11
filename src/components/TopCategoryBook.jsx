@@ -84,9 +84,9 @@ const TopCategoryBook = () => {
         {...settings}
         className="pt-6 border border-[#01B4FF] rounded-md"
       >
-        {programmingBook.map((item) => (
+        {programmingBook.map((item, index) => (
           <div
-            key={item.id}
+            key={index}
             className="flex flex-col items-center justify-center text-center mx-auto px-4 sm:px-6 md:px-8"
           >
             <div className="group relative w-36 h-36 sm:w-40 sm:h-40 border border-[#01B4FF] rounded-full overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
