@@ -3,16 +3,19 @@ import { FaCableCar, FaGift, FaHeart, FaTruck } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
 import { TbHeartPlus } from "react-icons/tb";
 import AddToCartBtn from "./AddToCartBtn";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ item }) => {
   return (
     <div key={item.id} className="p-4 m-0 gap-6 w-full   ">
       <div className="rounded-lg h-[390px]  border border-gray-400 hover:shadow-lg shadow-md overflow-hidden transition group ">
-        <img
-          className="mx-auto object-contain duration-300 group-hover:scale-110 transition-transform h-44 w-full p-4"
-          src={item.image_url}
-          alt={item.title}
-        />
+        <Link to={`/singlebook/${item.id}`}>
+          <img
+            className="mx-auto object-contain duration-300 group-hover:scale-110 transition-transform h-44 w-full p-4"
+            src={item.image_url}
+            alt={item.title}
+          />
+        </Link>
         <div className="p-4">
           <h3 className="text-lg font-bold text-gray-800 truncate">
             {item.title}

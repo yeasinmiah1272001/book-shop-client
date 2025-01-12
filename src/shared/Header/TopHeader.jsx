@@ -4,8 +4,10 @@ import logo from "../../assets/logo.png";
 
 // Import Font Awesome icons
 import { FaShoppingCart, FaHeart, FaUser } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const TopHeader = () => {
+  const cart = useSelector((state) => state.book.cart);
   return (
     <div>
       <div className="flex justify-center items-center py-1 border-b border-black">
@@ -38,7 +40,9 @@ const TopHeader = () => {
             </li>
             <li className="flex items-center space-x-2 hover:text-blue-500 cursor-pointer transition duration-200 ease-in-out">
               <FaShoppingCart className="text-gray-600" />
-              <span>Cart</span>
+              <span className="text-red-400">
+                Cart ({cart.length ? cart.length : 0})
+              </span>
             </li>
             <li className="flex items-center space-x-2 hover:text-blue-500 cursor-pointer transition duration-200 ease-in-out">
               <FaHeart className="text-gray-600" />

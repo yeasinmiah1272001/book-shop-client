@@ -21,7 +21,7 @@ const ProgrammingBook = () => {
     <Container>
       <SectionTitle title={"All Progming Books"} />
       <div className="grid md:grid-cols-2 lg:grid-cols-4 ">
-        {data.slice(0, 4).map((item) => (
+        {data.slice(5, 9).map((item) => (
           <BookCard item={item} key={item.id} />
         ))}
       </div>
