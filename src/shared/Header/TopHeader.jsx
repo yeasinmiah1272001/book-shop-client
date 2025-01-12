@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 // Import Font Awesome icons
 import { FaShoppingCart, FaHeart, FaUser } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const TopHeader = () => {
   const cart = useSelector((state) => state.book.cart);
@@ -38,11 +39,13 @@ const TopHeader = () => {
               <FaUser className="text-gray-600" />
               <span>Account</span>
             </li>
-            <li className="flex items-center space-x-2 hover:text-blue-500 cursor-pointer transition duration-200 ease-in-out">
-              <FaShoppingCart className="text-gray-600" />
-              <span className="text-red-400">
-                Cart ({cart.length ? cart.length : 0})
-              </span>
+            <li className=" hover:text-blue-500 cursor-pointer transition duration-200 ease-in-out">
+              <Link className="flex items-center space-x-2" to={"/cart"}>
+                <FaShoppingCart className="text-gray-600" />
+                <span className="text-red-400">
+                  Cart ({cart.length ? cart.length : 0})
+                </span>
+              </Link>
             </li>
             <li className="flex items-center space-x-2 hover:text-blue-500 cursor-pointer transition duration-200 ease-in-out">
               <FaHeart className="text-gray-600" />
